@@ -21,6 +21,7 @@ int bandingkan_artefak(const void *a, const void *b) {
     Artefak *m2 = (Artefak *)b;
     
     return strcmp(m1->kategori,m2->kategori);
+    int c = strcmp(m1->kategori,m2->kategori);
     if (m1->tahun != m2->tahun) {
         return m2->tahun - m1->tahun;
     }
