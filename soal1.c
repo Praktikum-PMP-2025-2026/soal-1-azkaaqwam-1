@@ -25,13 +25,14 @@ int bandingkan_artefak(const void *a, const void *b) {
         return m2->tahun - m1->tahun;
     }
     if (m1->nilaipenting != m2->nilaipenting) {
-        return m1->nilaipenting - m2->nilaipenting;
+        return m2->nilaipenting - m1->nilaipenting;
     }
     return strcmp(m1->nama, m2->nama);
 }
 int main(){
     int n;
-    scanf("%d", &n) != 1;
+    if (scanf("%d", &n) != 1) return 0;
+    
     Artefak daftar[n];
     for (int i = 0; i < n; i++) {
         scanf("%s %s %d %d", daftar[i].nama, daftar[i].kategori, &daftar[i].tahun, &daftar[i].nilaipenting);
