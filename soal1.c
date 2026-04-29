@@ -11,8 +11,8 @@
 #include <stdlib.h>
 
 typedef struct {
-    char nama[100];
-    char kategori[100];
+    char nama[50];
+    char kategori[50];
     int tahun;
     int nilaipenting;
 } Artefak;
