@@ -1,5 +1,11 @@
-
-
+/** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
+ *   Modul               : 3 - Structures and Dynamic Arrays
+ *   Hari dan Tanggal    : Rabu,29 April 2026
+ *   Nama (NIM)          : Azka Muhammad Aqwam(13224061)
+ *   Nama File           : soal1.c
+ *   Deskripsi           : Menggunakan struct sebagai variabel yang digunakan sebagai parameter untuk mengurutkan artefak sesuai dengan ketentuan
+ * 
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
