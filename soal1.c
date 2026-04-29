@@ -31,17 +31,16 @@ int bandingkan_artefak(const void *a, const void *b) {
 }
 int main(){
     int n;
-    if (scanf("%d", &n) != 1) return 0;
-    
+    scanf("%d", &n) != 1;
     Artefak daftar[n];
     for (int i = 0; i < n; i++) {
         scanf("%s %s %d %d", daftar[i].nama, daftar[i].kategori, &daftar[i].tahun, &daftar[i].nilaipenting);
     }
     qsort(daftar, n, sizeof(Artefak), bandingkan_artefak);
-    for (int j = 0; j < n-1; j++) {
-        printf("%s %s %d %d\n", daftar[j].nama, daftar[j].kategori, daftar[j].tahun, daftar[j].nilaipenting);
+    for (int i = 0; i < n-1; i++) {
+        printf("%s %s %d %d\n", daftar[i].nama, daftar[i].kategori, daftar[i].tahun, daftar[i].nilaipenting);
     }
-    int k=n-1;
-    printf("%s %s %d %d", daftar[k].nama, daftar[k].kategori, daftar[k].tahun, daftar[k].nilaipenting);
+    int j=n-1;
+    printf("%s %s %d %d", daftar[j].nama, daftar[j].kategori, daftar[j].tahun, daftar[j].nilaipenting);
     return 0;
 }
