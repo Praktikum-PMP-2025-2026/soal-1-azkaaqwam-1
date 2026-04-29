@@ -38,8 +38,9 @@ int main(){
         scanf("%s %s %d %d", daftar[i].nama, daftar[i].kategori, &daftar[i].tahun, &daftar[i].nilaipenting);
     }
     qsort(daftar, n, sizeof(Artefak), bandingkan_artefak);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n-1; i++) {
         printf("%s %s %d %d\n", daftar[i].nama, daftar[i].kategori, daftar[i].tahun, daftar[i].nilaipenting);
     }
+    printf("%s %s %d %d", daftar[n-1].nama, daftar[n-1].kategori, daftar[n-1].tahun, daftar[n-1].nilaipenting);
     return 0;
 }
